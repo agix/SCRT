@@ -1,0 +1,53 @@
+= partial 'partials/header'
+= partial 'partials/modals/contact'
+
+section.section.hero
+  .section-background.hero-background
+  .section-content.hero-content
+    .hero-heading
+      h1.hero-title À combien estimez-vous la valeur de vos données informatiques ?
+      p.hero-text Détectez les risques et anticiper le piratage de votre entreprise est primordial. Agissez en nous confiant l’évaluation de votre système d’information.
+      
+      .call-to-action.desktop-only data-toggle-modal="contact" Recevoir mon devis gratuit et personnalisé
+      .call-to-action.mobile-only data-toggle-modal="contact" Recevoir mon devis gratuit
+      
+      .iso-certification
+        = image_tag 'logo-iso.png', class: 'iso-certification-image', width: 34, height: 34
+        p.iso-certification-text
+          em SCRT est certifiée iso 27001:2005. : 
+          | la garantie de la confidentialité de vos données
+
+    .hero-image
+      = image_tag 'office.svg', width: 316, height: 316
+    
+    = link_to "#expertise", class: 'hero-learn-more', data: { scroll: true } do
+      p = t 'hero.scroll_to_learn_more'
+      = svg_tag 'icon-carret-down', width: 17, height: 10
+
+section.section.expertise#expertise
+  .section-content
+    .section-heading.expertise-heading
+      h5.expertise-heading-suptitle = t 'expertise.suptitle'
+      h2.expertise-heading-title = t 'expertise.title'
+    
+    .section-tabs.desktop-only
+      ul.section-tabs-links
+        - %w(attack defense investigation formation).each_with_index do |tab, i|
+          li.section-tabs-link class="#{'current' if i.zero?}" data-toggle-tab=tab
+            = svg_tag "icon-#{tab}", width: 22, height: 22
+            span = t "expertise.tabs.#{tab}.title"
+  
+  .desktop-only
+    - %w(attack defense investigation formation).each_with_index do |tab, i|
+      .section-tab class="section-tab--#{tab} #{'current' if i.zero?}" data-tab=tab
+        .section-tab-wrapper.markdown = markdown "expertise.tabs.#{tab}.content"
+  
+  .mobile-only
+    - %w(attack defense investigation formation).each_with_index do |tab, i|
+      .section-expertise
+        h2.section-expertise-heading
+          .section-expertise-heading-image = svg_tag "icon-#{tab}", width: 22, height: 22
+          span = t "expertise.tabs.#{tab}.title"
+        .section-expertise-content.markdown = markdown "expertise.tabs.#{tab}.content"
+      
+= partial 'partials/footer'

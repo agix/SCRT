@@ -1,0 +1,19 @@
+.header.desktop-only#top
+  .wrapper
+    = link_to "#top", class: 'header-logo', data: { scroll: true } do
+      = image_tag 'logo.png', height: 23
+    
+    = link_to "tel:+33556339322", class: 'header-phone' do
+      | +33 556 339 322
+      = svg_tag 'icon-phone', width: 30, height: 30
+
+.header.header--fixed
+  .wrapper
+    = link_to "#top", class: 'header-logo', data: { scroll: true } do
+      = image_tag 'logo.png', height: 23
+    
+    .call-to-action.desktop-only data-toggle-modal="contact" Recevoir mon devis gratuit et personnalisé
+    
+    = link_to "tel:+33556339322", class: 'header-phone' do
+      | +33 556 339 322
+      = svg_tag 'icon-phone', width: 30, height: 30

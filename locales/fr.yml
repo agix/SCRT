@@ -1,0 +1,52 @@
+fr:
+  hero:
+    scroll_to_learn_more: Faire défiler pour en savoir plus
+  expertise:
+    suptitle: Nos expertises à votre service
+    title: |
+      Passionnés par notre métier, nous croyons en ce que nous faisons et
+      prenons du plaisir à le faire.
+    tabs:
+      attack:
+        title: Attaque
+        content: |
+          ##### Audit Externe
+          Simulation d’une attaque menée depuis l’extérieur de votre réseau
+          ciblant la partie visible de votre système d’informations (sites
+          institutionnels, accès distants, serveurs mails, ...)
+
+          ##### Audit Interne
+          Évaluation du niveau de sécurité en cas de comportement
+          potentiellement malveillant de l’un de vos collaborateurs.
+      defense:
+        title: Défense
+        content: |
+          SCRT vous propose son expertise afin de réaliser des audits de code,
+          basés sur des méthodologies reconnues, et ce pour des technologies
+          telles que C, C++, C#, JSP, PHP.
+
+          SCRT s’engage à prendre en charge la maintenance du matériel et des
+          outils informatiques afin d’assurer la sécurité de vos systèmes
+          d’information, quels que soient les problèmes auxquels vous êtes
+          confrontés.
+      investigation:
+        title: Investigation
+        content: |
+          Si vous êtes victime d’un vol de données ou que des fichiers illicites
+          sont consultés depuis votre réseau, SCRT peut apporter son
+          savoir-faire afin de rassembler des preuves numériques, recevables
+          devant une cour de justice.
+
+          * préparation et interview
+          * Acquisition
+          * Analyse
+          * Rapport
+      formation:
+        title: Formation
+        content: |
+          ##### SENSIBILISATION SUR SITE/E-LEARNING
+          Cette formation permet de sensibiliser les utilisateurs aux
+          comportements à risque lors de l’utilisation des technologies
+          Internet.
+
+          * sensibilisation utilisateurs

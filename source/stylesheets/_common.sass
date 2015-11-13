@@ -1,0 +1,83 @@
+@import "compass/css3/transition"
+
+\:root
+  font-family: "Roboto", Arial, sans-serif
+  font-size: 14px
+
+*
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+html, body
+  position: relative
+  width: 100%
+  height: 100%
+  min-width: 100%
+  min-height: 100%
+  -webkit-overflow-scrolling: touch
+  margin: 0
+  padding: 0
+
+.wrapper
+  position: relative
+  max-width: $section-width
+  width: 100%
+  margin: auto
+
+.section
+  padding: $section-padding
+  &-content
+    position: relative
+    max-width: $section-width
+    width: 100%
+    height: 100%
+    margin: auto
+  &-background
+    position: absolute
+    background-size: cover
+    top: $section-padding
+    left: $section-padding
+    right: $section-padding
+    bottom: $section-padding
+
+h1, h2, h3, h4, h5, h6
+  font-weight: $font-weight-bold
+
+.call-to-action
+  display: inline-block
+  background: $red
+  border-radius: 3px
+  line-height: 60px
+  padding: 0 23px
+  font-weight: $font-weight-bold
+  text-transform: uppercase
+  color: white
+
+.desktop-only
+  display: block
+  &.call-to-action
+    display: inline-block
+.mobile-only
+  display: none
+  &.call-to-action
+    display: none
+
+@media (max-width: $section-width)
+  .desktop-only
+    display: none
+    &.call-to-action
+      display: none
+  .mobile-only
+    display: block
+    &.call-to-action
+      display: inline-block
+
+@media (max-width: $section-width)
+  .section
+    padding: $section-padding / 2
+    &-background
+      top: $section-padding / 2
+      left: $section-padding / 2
+      right: $section-padding / 2
+      bottom: $section-padding / 2

@@ -1,0 +1,128 @@
+.expertise
+  padding-top: 120px
+  &-heading
+    text-align: center
+    margin-bottom: 75px
+    &-suptitle
+      text-transform: uppercase
+      font-weight: $font-weight-medium
+      font-size: 12px
+      color: rgba(black, .3)
+      letter-spacing: 2px
+      margin: 0
+    &-title
+      max-width: 526px
+      font-weight: $font-weight-light
+      font-size: 21px
+      color: black
+      line-height: 28px
+      margin: 10px auto 0
+
+  .section-tabs
+    &-links
+      +display-flex
+      +flex-direction(row)
+      +align-items(center)
+      +justify-content(center)
+      list-style: none
+      padding: 0
+      margin: 0 0 30px
+    &-link
+      +display-flex
+      +flex-direction(row)
+      +align-items(center)
+      padding: 0 15px
+      cursor: pointer
+      span
+        opacity: .5
+        +transition(opacity .2s)
+      svg
+        vertical-align: middle
+        margin-right: 2px
+        opacity: .7
+        +transition(opacity .2s)
+      &:hover
+        span, svg
+          opacity: 1
+      &.current
+        span, svg
+          opacity: 1
+          color: $red
+
+  .markdown
+    h5
+      margin: 0
+      font-weight: $font-weight-medium
+      font-size: 16px
+      & + p
+        margin-top: 0
+    p
+      margin: 22px 0
+      &:first-child
+        margin-top: 0
+      &:last-child
+        margin-bottom: 0
+    ul
+      list-style: none
+      padding: 0
+      li
+        &:before
+          content: '› '
+
+  .section-tab
+    min-height: 360px
+    color: white
+    background-color: $gray
+    background-size: cover
+    background-position: center center
+    padding: 70px 10px
+    display: none
+    &.current
+      display: block
+    &-wrapper
+      max-width: 500px
+      margin: auto
+      font-size: 16px
+      line-height: 22px
+    &--attack
+      background-image: image-url('backgrounds/attack.jpg')
+    &--defense
+      background-image: image-url('backgrounds/defense.jpg')
+    &--investigation
+      background-image: image-url('backgrounds/investigation.jpg')
+    &--formation
+      background-image: image-url('backgrounds/formation.jpg')
+
+  .section-expertise
+    padding: 0 20px
+    margin: 56px 0
+    &-heading
+      font-weight: $font-weight-regular
+      font-size: 19px
+      color: $red
+      margin: 0 0 26px
+      &-image
+        position: relative
+        display: inline-block
+        svg
+          vertical-align: middle
+          vertical-align: sub
+        &:after
+          position: absolute
+          content: ''
+          bottom: -5px
+          left: 0
+          height: 2px
+          width: 100%
+          background-color: $red
+
+@media (max-width: $section-width)
+  .expertise
+    padding-top: 60px
+    &-heading
+      margin-bottom: 0
+      &-suptitle
+        font-size: 10px
+      &-title
+        font-size: 16px
+        line-height: 21px
