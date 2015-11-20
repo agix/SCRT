@@ -12,7 +12,7 @@ fr:
         content: |
           ##### Audit Externe
           Simulation d’une attaque menée depuis l’extérieur de votre réseau
-          ciblant la partie visible de votre système d’informations (sites
+          ciblant la partie visible de votre système d’information (sites
           institutionnels, accès distants, serveurs mails, ...)
 
           ##### Audit Interne
@@ -37,7 +37,7 @@ fr:
           savoir-faire afin de rassembler des preuves numériques, recevables
           devant une cour de justice.
 
-          * préparation et interview
+          * Préparation et interview
           * Acquisition
           * Analyse
           * Rapport
@@ -49,4 +49,4 @@ fr:
           comportements à risque lors de l’utilisation des technologies
           Internet.
 
-          * sensibilisation utilisateurs
+          * Sensibilisation utilisateurs
