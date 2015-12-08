@@ -1,57 +1,72 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg width="340px" height="340px" viewBox="0 0 340 340" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
     <style>
-        #circle-protection {
-          transform: scale(0.6);
+        .circle-protection {
+          transform: scale(1.1);
           transform-origin: center center;
           opacity: 0;
           animation: circle-protection 0.4s ease-in-out forwards;
-          animation-delay: 1s;
+          animation-delay: 0.2s;
+        }
+        .circle-protection.hover {
+          animation: circle-protection-final 0s ease-in-out forwards;
+        }
+        #intro:hover .circle-protection.hover {
+          animation: circle-protection 0.4s ease-in-out forwards;
+          animation-delay: 0.2s;
         }
         @keyframes circle-protection {
-          0%    {transform: scale(.6); opacity: 0;}
-          90%  {transform: scale(1.05);}
+          0%    {transform: scale(1.3); opacity: 0;}
+          50%  {transform: scale(.97);}
+          80%  {transform: scale(1.02);}
           100%  {transform: scale(1); opacity: 1;}
         }
+        @keyframes circle-protection-final {
+          100%  {transform: scale(1); opacity: 1;}
+        }
+
         .attack {
-          animation: attack 0.3s ease-in-out forwards;
           transform: scale(1);
           transform-origin: center center;
           opacity: 1;
-          animation-delay: 1s;
+          animation: attack 0.2s ease-in-out forwards;
+          animation-delay: 0.4s;
         }
-        .attack.a-2 {
-          animation-delay: 1.1s;
+        .attack.hover {
+          animation: attack-final 0s ease-in-out forwards;
         }
-        .attack.a-3 {
-          animation-delay: 1.3s;
-        }
-        .attack.a-4 {
-          animation-delay: 1.5s;
+        #intro:hover .attack.hover {
+          animation: attack 0.2s ease-in-out forwards;
+          animation-delay: 0.4s;
         }
         @keyframes attack {
           0%    {transform: scale(1); opacity: 1;}
-          100%  {transform: scale(.6); opacity: 0;}
+          100%  {transform: scale(.2); opacity: 0;}
         }
+        @keyframes attack-final {
+          100%  {transform: scale(.2); opacity: 0;}
+        }
+
         .rescue {
           transform: scale(0.6);
           transform-origin: center center;
           opacity: 0;
           animation: rescue 0.5s ease-in-out forwards;
-          animation-delay: 1.1s;
+          animation-delay: 0.5s;
         }
-        .rescue.r-2 {
-          animation-delay: 1.2s;
+        .rescue.hover {
+          animation: rescue-final 0s ease-in-out forwards;
         }
-        .rescue.r-3 {
-          animation-delay: 1.4s;
-        }
-        .rescue.r-4 {
-          animation-delay: 1.6s;
+        #intro:hover .rescue.hover {
+          animation: rescue 0.5s ease-in-out forwards;
+          animation-delay: 0.5s;
         }
         @keyframes rescue {
-          0%    {transform: scale(.6); opacity: 0;}
+          0%    {transform: scale(.2); opacity: 0;}
           80%  {transform: scale(1.1);}
+          100%  {transform: scale(1); opacity: 1;}
+        }
+        @keyframes rescue-final {
           100%  {transform: scale(1); opacity: 1;}
         }
 
@@ -116,7 +131,7 @@
             <g id="illustration" sketch:type="MSArtboardGroup">
                 <rect id="bg-test" fill="rgba(0,0,0,0.01)" sketch:type="MSShapeGroup" x="0" y="0" width="340" height="340"></rect>
                 <g id="office" sketch:type="MSLayerGroup" transform="translate(20.000000, 20.000000)">
-                    <circle id="circle-protection" stroke="#D61836" stroke-width="2" filter="url(#filter-1)" sketch:type="MSShapeGroup" cx="150" cy="150" r="150"></circle>
+                    <circle id="circle-protection" class="circle-protection" stroke="#D61836" stroke-width="2" filter="url(#filter-1)" sketch:type="MSShapeGroup" cx="150" cy="150" r="150"></circle>
                     <path d="M225.905191,98 L227.115158,98 C237.143983,112.843449 243,130.737851 243,150 C243,167.981742 237.896638,184.77153 229.059278,199 L227.87946,199 C236.824453,184.81288 242,168.010847 242,150 C242,130.702473 236.058566,112.792642 225.905191,98 Z M189,66.6512036 L189,65.5478464 C177.139162,60.0613542 163.92709,57 150,57 C136.463073,57 123.601663,59.8922311 112,65.0924634 L112,66.1897993 C123.58324,60.9295319 136.449506,58 150,58 C163.941698,58 177.15909,61.1011253 189.000005,66.6512058 Z M74.0948093,98 L72.8848417,98 C62.8560165,112.843449 57,130.737851 57,150 C57,167.981742 62.1033618,184.77153 70.9407216,199 L72.1205401,199 C63.1755467,184.81288 58,168.010847 58,150 C58,130.702473 63.9414341,112.792642 74.0948093,98 Z M112,233.810201 L112,234.907537 C123.601663,240.107769 136.463073,243 150,243 C163.92709,243 177.139162,239.938646 189,234.452154 L189,233.348796 C177.15909,238.898875 163.941698,242 150,242 C136.449506,242 123.58324,239.070468 112,233.810201 Z" id="circle" opacity="0.222831157" fill="#D61836" sketch:type="MSShapeGroup"></path>
                     <g class="rescue r3">
                       <path d="M198,67.0029293 C198,66.4490268 198.439813,66 198.996535,66 L225.003465,66 C225.553836,66 226,66.4378814 226,67.0029293 L226,71.9970707 C226,72.5509732 225.560187,73 225.003465,73 L198.996535,73 C198.446164,73 198,72.5621186 198,71.9970707 L198,67.0029293 Z M202.5,71 C203.328427,71 204,70.3284271 204,69.5 C204,68.6715729 203.328427,68 202.5,68 C201.671573,68 201,68.6715729 201,69.5 C201,70.3284271 201.671573,71 202.5,71 Z M214,69.5 C214,69.2238576 214.222473,69 214.509666,69 L222.490334,69 C222.771815,69 223,69.2319336 223,69.5 C223,69.7761424 222.777527,70 222.490334,70 L214.509666,70 C214.228185,70 214,69.7680664 214,69.5 Z M198,75.0029293 C198,74.4490268 198.439813,74 198.996535,74 L225.003465,74 C225.553836,74 226,74.4378814 226,75.0029293 L226,79.9970707 C226,80.5509732 225.560187,81 225.003465,81 L198.996535,81 C198.446164,81 198,80.5621186 198,79.9970707 L198,75.0029293 Z M202.5,79 C203.328427,79 204,78.3284271 204,77.5 C204,76.6715729 203.328427,76 202.5,76 C201.671573,76 201,76.6715729 201,77.5 C201,78.3284271 201.671573,79 202.5,79 Z M214,77.5 C214,77.2238576 214.222473,77 214.509666,77 L222.490334,77 C222.771815,77 223,77.2319336 223,77.5 C223,77.7761424 222.777527,78 222.490334,78 L214.509666,78 C214.228185,78 214,77.7680664 214,77.5 Z M198,83.0029293 C198,82.4490268 198.439813,82 198.996535,82 L225.003465,82 C225.553836,82 226,82.4378814 226,83.0029293 L226,87.9970707 C226,88.5509732 225.560187,89 225.003465,89 L198.996535,89 C198.446164,89 198,88.5621186 198,87.9970707 L198,83.0029293 Z M202.5,87 C203.328427,87 204,86.3284271 204,85.5 C204,84.6715729 203.328427,84 202.5,84 C201.671573,84 201,84.6715729 201,85.5 C201,86.3284271 201.671573,87 202.5,87 Z M214,85.5 C214,85.2238576 214.222473,85 214.509666,85 L222.490334,85 C222.771815,85 223,85.2319336 223,85.5 C223,85.7761424 222.777527,86 222.490334,86 L214.509666,86 C214.228185,86 214,85.7680664 214,85.5 Z" id="server" fill="url(#linearGradient-2)" filter="url(#filter-3)" sketch:type="MSShapeGroup"></path>
@@ -224,4 +239,12 @@
             </g>
         </g>
     </g>
+    <script type="text/javascript">
+      var elements = document.querySelectorAll('#circle-protection, .attack, .rescue')
+      setTimeout(function(){
+        [].forEach.call(elements, function(element) {
+          element.classList.add('hover');
+        });
+      }, 2000);
+    </script>
 </svg>
