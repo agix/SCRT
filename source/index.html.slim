@@ -29,19 +29,6 @@ section.section.expertise#expertise
     .section-heading.expertise-heading
       h5.expertise-heading-suptitle = t 'expertise.suptitle'
       h2.expertise-heading-title = t 'expertise.title'
-    
-    / .section-tabs.desktop-only
-    /   ul.section-tabs-links
-    /     - %w(attack defense investigation formation).each_with_index do |tab, i|
-    /       li.section-tabs-link class="#{'current' if i.zero?}" data-toggle-tab=tab
-    /         = svg_tag "icon-#{tab}", width: 22, height: 22
-    /         span = t "expertise.tabs.#{tab}.title"
-  
-  / .desktop-only
-  /   .section-tabs-wrapper
-  /     - %w(attack defense investigation formation).each_with_index do |tab, i|
-  /       .section-tab class="section-tab--#{tab} #{'current' if i.zero?}" data-tab=tab
-  /         .section-tab-wrapper.markdown = markdown "expertise.tabs.#{tab}.content"
 
   .sections-expertise
     - %w(attack defense investigation formation).each_with_index do |tab, i|
@@ -52,7 +39,6 @@ section.section.expertise#expertise
         .section-expertise-content.markdown = markdown "expertise.tabs.#{tab}.content"
 
   .section-tabs-wrapper
-    - %w(defense).each_with_index do |tab, i|
-      .section-tab class="section-tab--#{tab} #{'current' if i.zero?}" data-tab=tab
+    .section-tab
       
 = partial 'partials/footer'

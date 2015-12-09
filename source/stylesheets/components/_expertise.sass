@@ -85,16 +85,9 @@
     bottom: 0
     left: 0
     color: white
-    background-color: $gray
+    background: image-url('backgrounds/footer.jpg') no-repeat center center $gray
     background-size: cover
-    background-position: center center
     padding: 70px 10px
-    opacity: 0
-    visibility: hidden
-    +transition(all .2s)
-    &.current
-      opacity: 1
-      visibility: visible
     &-wrapper
       max-width: 500px
       margin: auto
@@ -110,14 +103,6 @@
       .section-tab-wrapper
         opacity: 1
         visibility: visible
-    &--attack
-      background-image: image-url('backgrounds/attack.jpg')
-    &--defense
-      background-image: image-url('backgrounds/defense.jpg')
-    &--investigation
-      background-image: image-url('backgrounds/investigation.jpg')
-    &--formation
-      background-image: image-url('backgrounds/formation.jpg')
 
   .sections-expertise
     max-width: 800px
