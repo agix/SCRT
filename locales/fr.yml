@@ -10,43 +10,55 @@ fr:
       attack:
         title: Attaque
         content: |
+          SCRT se place dans la peau d'un attaquant afin d'identifier vos
+          principales vulnérabilités.
+
           ##### Audit Externe
-          Simulation d’une attaque menée depuis l’extérieur de votre réseau
-          ciblant la partie visible de votre système d’information (sites
-          institutionnels, accès distants, serveurs mails, ...)
+          Eprouvez la surface de votre système d'information accessible depuis
+          internet (sites institutionnels, accès distants, serveurs mails, ...)
 
           ##### Audit Interne
-          Évaluation du niveau de sécurité en cas de comportement
-          potentiellement malveillant de l’un de vos collaborateurs.
+          Simulant un collaborateur malveillant ou compromis, SCRT réalise un
+          test d'intrusion de votre système interne afin de vérifier la bonne
+          segmentation des niveaux d'accès.
+
       defense:
         title: Défense
         content: |
-          SCRT vous propose son expertise afin de réaliser des audits de code,
-          basés sur des méthodologies reconnues, et ce pour des technologies
-          telles que C, C++, C#, JSP, PHP.
+          SCRT vous propose son expertise afin d'améliorer la sécurité des
+          logiciels que vous développez.
 
-          SCRT s’engage à prendre en charge la maintenance du matériel et des
-          outils informatiques afin d’assurer la sécurité de vos systèmes
-          d’information, quels que soient les problèmes auxquels vous êtes
-          confrontés.
+          ##### Analyse du code source
+          Faites auditer le code source de vos applications et formez vos
+          développeur aux bonnes pratiques de sécurité, et ce pour des
+          technologies telles que C, C++, C#, JSP, PHP, Python, Ruby, Perl...
+
+          ##### Audit applicatif
+          Sur application mobile, web ou métier, SCRT réalise l'audit de votre
+          application en accord avec les plus hauts critères de sécurité.
+
       investigation:
         title: Investigation
         content: |
-          Si vous êtes victime d’un vol de données ou que des fichiers illicites
-          sont consultés depuis votre réseau, SCRT peut apporter son
-          savoir-faire afin de rassembler des preuves numériques, recevables
-          devant une cour de justice.
+          Si vous êtes victimes d'un malware, que votre serveur web participe à
+          des attaques DDoS ou si des données sensibles fuites depuis votre
+          réseau, SCRT peut vous accompagner afin d'identifier la source du
+          problème et rassembler des preuves numériques.
 
-          * Préparation et interview
+          * Préparation et interview
           * Acquisition
           * Analyse
           * Rapport
+
       formation:
-        title: Formation
+        title: Formation et conseil
         content: |
-          ##### Sensibilisation sur site/e-learning
-          Cette formation permet de sensibiliser les utilisateurs aux
-          comportements à risque lors de l’utilisation des technologies
-          Internet.
+          SCRT met son savoir-faire à votre service afin de vous aider à prendre
+          les meilleures décisions relatives à la sécurité de votre
+          infrastructure mais aussi pour former vos collaborateurs aux risques
+          et bonnes pratiques induits par l'utilisation d'outils informatiques.
 
           * Sensibilisation utilisateurs
+          * Techniques de hacking
+          * Défense en profondeur
+          * Développement sécurisé
