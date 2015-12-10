@@ -3,8 +3,8 @@
   .modal-content
     .modal-close data-toggle-modal="contact"
       = svg_tag 'icon-close', width: 20, height: 20
-    
-    .modal-wrapper      
+
+    .modal-wrapper
       form.form.modal-form data-form="contact"
         .modal-heading
           h5.modal-heading-suptitle Avec SCRT
@@ -18,7 +18,7 @@
           .form-input
             label for="contact_name" Votre nom et poste
             input#contact_name type="text" name="name" required=true
-        
+
         .form-row
           .form-input
             label for="contact_email" Adresse Email
@@ -27,17 +27,17 @@
           .form-input
             label for="contact_phone" Numéro de téléphone
             input#contact_phone type="phone" name="phone" required=true
-        
+
         .form-row
           .form-input.form-input--full
             label for="contact_message" Commentaires
             textarea#contact_message name="message" placeholder="Optionnel" rows=10
-        
+
         .form-row
           .form-input.form-input--full.form-submit
-            input.desktop-only.call-to-action type="submit" value="Recevoir mon devis gratuit et personnalisé"
-            input.mobile-only.call-to-action type="submit" value="Recevoir mon devis gratuit"
-      
+            input.desktop-only.call-to-action type="submit" value="Recevoir mon devis gratuit et personnalisé" onclick="ga('send','event','submit','desktop')"
+            input.mobile-only.call-to-action type="submit" value="Recevoir mon devis gratuit" onclick="ga('send','event','submit','mobile')"
+
       .form-result
         = svg_tag 'icon-check', width: 150, height: 150
         .modal-heading
