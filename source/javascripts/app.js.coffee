@@ -61,7 +61,7 @@ form.addEventListener 'submit', (e)->
     return unless XHR.readyState is 4
     form.classList.add('done')
 
-  XHR.open 'POST', '//fwd.muxumuxu.com/forms/d032b195-6a9c-4ca3-a43c-3c195f93f79e'
+  XHR.open 'POST', '//fwd.forwarder.cc/forms/d032b195-6a9c-4ca3-a43c-3c195f93f79e'
   XHR.setRequestHeader 'Content-Type', 'application/x-www-form-urlencoded'
 
   XHR.send urlEncodedData
